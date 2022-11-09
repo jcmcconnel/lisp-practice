@@ -1,0 +1,17 @@
+(defun fibonacci (n)
+  "Computes the fibonacci sequence with a loop"
+  (let (a b c)
+    (setq a 0)
+    (setq b 0)
+    (setq c 1)
+    (loop 
+      (format t "~2d" c)
+      (setq a b)
+      (setq b c)
+      (setq c (+ a b))
+      (setq n (- n 1))
+      (when (<= n 0) (return))
+    )
+  )
+)
+(fibonacci 5)
