@@ -1,5 +1,4 @@
 (defun fibonacci (n)
-  "Computes the fibonacci sequence with a loop"
   (let (a b c)
     (setq a 0)
     (setq b 0)

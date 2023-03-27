@@ -5,3 +5,5 @@
     (+ (binomial (- n 1) (- r 1)) (binomial (- n 1) r))
   )
 )
+
+(format t "~2d" (binomial (read) (read)))
